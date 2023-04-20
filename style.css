@@ -77,3 +77,20 @@ body{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+        .board{
+            grid-template-rows: 1fr 1fr;
+            width:20em;
+        }
+        .board .text{
+            grid-row: 2 / 3;
+            grid-column: unset;
+        }
+        .board img{
+            width:20em;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 0;
+        }
+  }
+
